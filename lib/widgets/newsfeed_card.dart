@@ -11,6 +11,7 @@ class NewsfeedCard extends StatelessWidget {
   final bool? hasImage;
   final String? profileImage;
   final String? postImage;
+  final String? likeIcon;
 
   const NewsfeedCard({
     super.key,
@@ -21,6 +22,7 @@ class NewsfeedCard extends StatelessWidget {
     this.hasImage,
     this.profileImage,
     this.postImage,
+    this.likeIcon,
   });
 
   @override
@@ -100,7 +102,11 @@ class NewsfeedCard extends StatelessWidget {
               children: [
                 TextButton.icon(
                   onPressed: () {},
-                  icon: const Icon(Icons.thumb_up, color: fbPrimary),
+                  icon: Image.asset(
+                    likeIcon ?? 'assets/images/like.jpg',
+                    width: ScreenUtil().setSp(16),
+                    height: ScreenUtil().setSp(16),
+                  ),
                   label: CustomText(
                     text: numOfLikes.toString(),
                     fontSize: ScreenUtil().setSp(12),

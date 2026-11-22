@@ -14,6 +14,7 @@ class NewsfeedScreen extends StatelessWidget {
           date: '2 hours ago',
           numOfLikes: 67,
           profileImage: 'assets/images/kluwi.jpg',
+          likeIcon: 'assets/images/like.jpg',
         ),
         NewsfeedCard(
           userName: 'Makati Fukiko',
@@ -24,6 +25,7 @@ class NewsfeedScreen extends StatelessWidget {
           hasImage: true,
           profileImage: 'assets/images/fukiko.jpg',
           postImage: 'assets/images/post.jpg',
+          likeIcon: 'assets/images/like.jpg',
         ),
       ],
     );
