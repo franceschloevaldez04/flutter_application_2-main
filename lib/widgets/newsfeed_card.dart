@@ -96,7 +96,7 @@ class NewsfeedCard extends StatelessWidget {
                 fit: BoxFit.cover,
               )
             else if (hasImage == true)
-              const Image(image: AssetImage('assets/images/kluwi.jpg')),
+              const Image(image: AssetImage('assets/icons/kluwi.jpg')),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
