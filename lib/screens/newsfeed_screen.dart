@@ -13,8 +13,9 @@ class NewsfeedScreen extends StatelessWidget {
           postContent: 'Bili na kayu balut sa akin, mga kababayan',
           date: '2 hours ago',
           numOfLikes: 67,
+          hasImage: true,
           profileImage: 'assets/images/kluwi.jpg',
-          likeIcon: 'assets/images/like.jpg',
+          postImage: 'assets/images/balut.jpg',
         ),
         NewsfeedCard(
           userName: 'Makati Fukiko',
@@ -25,7 +26,6 @@ class NewsfeedScreen extends StatelessWidget {
           hasImage: true,
           profileImage: 'assets/images/fukiko.jpg',
           postImage: 'assets/images/post.jpg',
-          likeIcon: 'assets/images/like.jpg',
         ),
       ],
     );

@@ -11,7 +11,6 @@ class NewsfeedCard extends StatelessWidget {
   final bool? hasImage;
   final String? profileImage;
   final String? postImage;
-  final String? likeIcon;
 
   const NewsfeedCard({
     super.key,
@@ -22,7 +21,6 @@ class NewsfeedCard extends StatelessWidget {
     this.hasImage,
     this.profileImage,
     this.postImage,
-    this.likeIcon,
   });
 
   @override
@@ -82,7 +80,6 @@ class NewsfeedCard extends StatelessWidget {
               ],
             ),
             SizedBox(height: ScreenUtil().setHeight(5)),
-            // Post Content
             CustomText(
               text: postContent,
               fontSize: ScreenUtil().setSp(12),
@@ -96,14 +93,14 @@ class NewsfeedCard extends StatelessWidget {
                 fit: BoxFit.cover,
               )
             else if (hasImage == true)
-              const Image(image: AssetImage('assets/icons/kluwi.jpg')),
+              const Image(image: AssetImage('assets/images/kluwi.jpg')),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TextButton.icon(
                   onPressed: () {},
                   icon: Image.asset(
-                    likeIcon ?? 'assets/images/like.jpg',
+                    'assets/icons/like.jpg',
                     width: ScreenUtil().setSp(16),
                     height: ScreenUtil().setSp(16),
                   ),
