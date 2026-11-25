@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:surname_mobprog/screens/home_screen.dart';
-import 'package:surname_mobprog/screens/newsfeed_screen.dart';
+import 'package:valdez/screens/home_screen.dart';
+import 'package:valdez/screens/newsfeed_screen.dart';
 
 void main() {
   runApp(const MainApp());

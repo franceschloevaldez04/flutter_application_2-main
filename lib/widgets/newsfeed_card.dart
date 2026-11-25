@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:surname_mobprog/widgets/custom_text.dart';
+import 'package:valdez/widgets/custom_text.dart';
 import '../constants.dart';
 
 class NewsfeedCard extends StatelessWidget {
@@ -87,11 +87,7 @@ class NewsfeedCard extends StatelessWidget {
             ),
             SizedBox(height: ScreenUtil().setHeight(5)),
             if (postImage != null)
-              Image.asset(
-                postImage!,
-                width: double.infinity,
-                fit: BoxFit.cover,
-              )
+              Image.asset(postImage!, width: double.infinity, fit: BoxFit.cover)
             else if (hasImage == true)
               const Image(image: AssetImage('assets/images/kluwi.jpg')),
             Row(

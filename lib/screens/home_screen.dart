@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:surname_mobprog/constants.dart';
-import 'package:surname_mobprog/screens/newsfeed_screen.dart';
-import 'package:surname_mobprog/widgets/custom_text.dart';
+import 'package:valdez/constants.dart';
+import 'package:valdez/screens/newsfeed_screen.dart';
+import 'package:valdez/screens/notification_screen.dart';
+import 'package:valdez/widgets/custom_text.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -31,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: PageView(
         controller: _pageController,
-        children: const <Widget>[NewsfeedScreen()],
+        children: const <Widget>[NewsfeedScreen(), NotificationScreen()],
         onPageChanged: (page) {
           setState(() {
             _selectedIndex = page;
